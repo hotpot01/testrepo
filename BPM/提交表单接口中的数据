@@ -1,0 +1,3407 @@
+{
+    "name": {
+        "zh-CN": "看看BPM发起表单",
+        "en-US": "start_form"
+    },
+    "rule_metas": [],
+    "rule_meta_groups": [],
+    "form_meta_id": "7106806751860920078",
+    "ui_meta": "{\"pages\":[{\"title\":{\"zh-CN\":\"分页\",\"en-US\":\"Page\"},\"key\":\"cea18056cee\",\"visibility\":true,\"sections\":[{\"title\":{\"zh-CN\":\"分组\",\"en-US\":\"Group\"},\"layout\":{\"columns\":1},\"key\":\"ea18056ceef\",\"visibility\":true,\"content\":[{\"type\":\"fields\",\"content\":[{\"field_index\":\"18056ceefeb\"}]}]},{\"title\":{\"zh-CN\":\"分组\",\"en-US\":\"Group\"},\"layout\":{\"columns\":1},\"key\":\"b63954cb16e\",\"visibility\":true,\"content\":[{\"type\":\"fields\",\"content\":[{\"field_index\":\"3954cb16ed0\"}]}]},{\"title\":{\"zh-CN\":\"分组\",\"en-US\":\"Group\"},\"layout\":{\"columns\":1},\"key\":\"0933948eb11\",\"visibility\":true,\"content\":[{\"type\":\"fields\",\"content\":[{\"field_index\":\"33948eb117b\"}]}]},{\"title\":{\"zh-CN\":\"分组\",\"en-US\":\"Group\"},\"layout\":{\"columns\":1},\"key\":\"be3ae99e847\",\"visibility\":true,\"content\":[{\"type\":\"fields\",\"content\":[{\"field_index\":\"3ae99e8477a\"}]},{\"visibility\":true,\"key\":\"2df8974b8b6\",\"type\":\"fields\",\"content\":[{\"field_index\":\"df8974b8b69\"}]}]}]}]}",
+    "fields_meta": [
+        {
+            "default_setting": {
+                "boolean": null,
+                "url": null,
+                "date": null,
+                "datetime": {
+                    "type": 1,
+                    "variables": null
+                },
+                "text": null,
+                "employee": null,
+                "department": null,
+                "object": null
+            },
+            "field_name": "18056ceefeb",
+            "label": {
+                "zh-CN": "生效日期",
+                "en-US": "Effective date"
+            },
+            "required": false,
+            "searchable": null,
+            "default": null,
+            "advanced": {
+                "time_axis": null,
+                "template_field_metas": null,
+                "phone": null,
+                "iframe_setting": null,
+                "employee": null,
+                "alert_text_setting": null,
+                "options": null,
+                "user_optional": null,
+                "layout": null,
+                "email": null,
+                "person_name": null,
+                "custom": null,
+                "confirmation_setting": null,
+                "style": {
+                    "placeholder": null,
+                    "format": "YYYY-MM-DD"
+                },
+                "address": null,
+                "national_id": null,
+                "enum_setting": null,
+                "number_setting": null,
+                "select_setting": null,
+                "bank_account": null,
+                "time_axis_range": {
+                    "begin_type": 1,
+                    "begin_variables": [],
+                    "end_type": 1,
+                    "end_variables": []
+                }
+            },
+            "type": 7,
+            "record_limit": null,
+            "variables": [
+                {
+                    "list_type": null,
+                    "method_name": "",
+                    "type": 7,
+                    "wk_api_name": null,
+                    "value": null,
+                    "wk_field_path": null,
+                    "enum_source_type": null,
+                    "api_name": "effective_date",
+                    "data_source_id": null
+                }
+            ],
+            "secrecy": null,
+            "exportable": null,
+            "writable": true,
+            "roles": null,
+            "role_authority_list": [],
+            "internal": null,
+            "item_type": 0,
+            "tips": "{}",
+            "source_type": 0,
+            "multi_variables": {},
+            "form_type": "date_picker",
+            "digest": null,
+            "disabled": false,
+            "visibility": true
+        },
+        {
+            "searchable": null,
+            "writable": true,
+            "default_setting": null,
+            "default": null,
+            "roles": null,
+            "field_name": "3954cb16ed0",
+            "required": false,
+            "secrecy": null,
+            "exportable": null,
+            "item_type": 0,
+            "record_limit": null,
+            "variables": [
+                {
+                    "enum_source_type": 2,
+                    "method_name": "",
+                    "api_name": "transform_type",
+                    "type": 4,
+                    "list_type": null,
+                    "wk_field_path": null,
+                    "data_source_id": "6981714184493403940",
+                    "wk_api_name": "assignment_start_reason",
+                    "value": null
+                }
+            ],
+            "digest": null,
+            "advanced": {
+                "time_axis_range": null,
+                "email": null,
+                "enum_setting": null,
+                "iframe_setting": null,
+                "select_setting": null,
+                "alert_text_setting": null,
+                "custom": null,
+                "time_axis": null,
+                "phone": null,
+                "national_id": null,
+                "user_optional": null,
+                "employee": null,
+                "bank_account": null,
+                "style": null,
+                "layout": null,
+                "options": [
+                    {
+                        "description": null,
+                        "disabled": false,
+                        "childrens": [
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "campus_hire_intern",
+                                "name": {
+                                    "zh-CN": "校园招聘（实习）",
+                                    "en-US": "Campus hire (Intern)"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "campus_hire_regular",
+                                "name": {
+                                    "zh-CN": "校园招聘（正式）",
+                                    "en-US": "Campus hire (Regular)"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "internship_hire",
+                                "name": {
+                                    "zh-CN": "实习生招聘",
+                                    "en-US": "Internship hire"
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "experienced_hire",
+                                "name": {
+                                    "zh-CN": "社会招聘",
+                                    "en-US": "Experienced hire"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "rehire_after_retirement",
+                                "name": {
+                                    "zh-CN": "返聘入职",
+                                    "en-US": "Rehire after retirement"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "acquired",
+                                "name": {
+                                    "zh-CN": "并购入职",
+                                    "en-US": "Acquired"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "unknown",
+                                "name": {
+                                    "zh-CN": "未知",
+                                    "en-US": "Unknown"
+                                }
+                            },
+                            {
+                                "id": "onboarding_unknown",
+                                "name": {
+                                    "zh-CN": "未知",
+                                    "en-US": "Unknown"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            }
+                        ],
+                        "visibility": true,
+                        "id": "onboarding",
+                        "name": {
+                            "zh-CN": "入职",
+                            "en-US": "Onboarding"
+                        }
+                    },
+                    {
+                        "disabled": false,
+                        "childrens": [
+                            {
+                                "name": {
+                                    "zh-CN": "上级变 更",
+                                    "en-US": "Reporting Line Change2"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "reporting_line_change"
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "supervisor_change",
+                                "name": {
+                                    "zh-CN": "上级变更",
+                                    "en-US": "Reporting Line Change"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "job_status_change",
+                                "name": {
+                                    "zh-CN": "常规调动",
+                                    "en-US": "Job status change"
+                                }
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "direct_leader_change",
+                                "name": {
+                                    "zh-CN": "直属上级变更",
+                                    "en-US": "Direct leader change"
+                                }
+                            },
+                            {
+                                "id": "transfer_between_bps",
+                                "name": {
+                                    "zh-CN": "跨 BP 调动",
+                                    "en-US": "Transfer between BPs"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "internal_transfer",
+                                "name": {
+                                    "zh-CN": "内部转岗",
+                                    "en-US": "Internal transfer"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "job_change_unknown",
+                                "name": {
+                                    "zh-CN": "异动发起（拆合流）",
+                                    "en-US": "Unknown"
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "job_change_test2",
+                                "name": {
+                                    "zh-CN": "异动测试2~",
+                                    "en-US": "Job change test2~"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option1",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "🍎更改工作地点"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "aba，aba-aba",
+                                "name": {
+                                    "zh-CN": "这就是你的异动类型吗",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option2",
+                                "name": {
+                                    "zh-CN": "异动的类型",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option9",
+                                "name": {
+                                    "zh-CN": "这就是你的异动类型吗？77777777777777777777",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option10",
+                                "name": {
+                                    "zh-CN": "这就是你的异动类型吗？8",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option11",
+                                "name": {
+                                    "zh-CN": "这就是你的异动类型吗？9",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option12",
+                                "name": {
+                                    "en-US": "异动的类型1",
+                                    "zh-CN": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "测试-1",
+                                    "en-US": "test-1"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option13"
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option15",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "异动UAT流程"
+                                }
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option21",
+                                "name": {
+                                    "zh-CN": "!!! 不要使用（博研-无任何校验）",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "0810异动类型",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option22"
+                            },
+                            {
+                                "id": "job_change_test",
+                                "name": {
+                                    "zh-CN": "字节职务 demo",
+                                    "en-US": "job_change_test"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "异动的类型",
+                                "name": {
+                                    "zh-CN": "异动的类型吧",
+                                    "en-US": "A transform"
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option16",
+                                "name": {
+                                    "zh-CN": "小小的异动类型",
+                                    "en-US": "Small transform"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "123",
+                                "name": {
+                                    "zh-CN": "痛苦的异动",
+                                    "en-US": "sad transform"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option4",
+                                "name": {
+                                    "zh-CN": "这就是异动吧",
+                                    "en-US": "This is transform"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "visibility": false,
+                                "id": "1",
+                                "name": {
+                                    "zh-CN": "热爱异动",
+                                    "en-US": "Love transform"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option23",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "LR异动类型"
+                                }
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option24",
+                                "name": {
+                                    "zh-CN": "12313",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option25",
+                                "name": {
+                                    "zh-CN": "111-异动测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option26",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "222-异动测试"
+                                }
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option27",
+                                "name": {
+                                    "zh-CN": "222-异动测试2",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option28",
+                                "name": {
+                                    "zh-CN": "222-异动测试3",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option29",
+                                "name": {
+                                    "zh-CN": "222-异动测试5",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option30",
+                                "name": {
+                                    "zh-CN": "1111",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option31",
+                                "name": {
+                                    "zh-CN": "汪媛测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option32",
+                                "name": {
+                                    "zh-CN": "czx",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option33",
+                                "name": {
+                                    "zh-CN": "111_异动测试123",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option34",
+                                "name": {
+                                    "zh-CN": "222-异动测试6",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option35",
+                                "name": {
+                                    "zh-CN": "222-异动测试7",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option36",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "222-异动测试8"
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option37",
+                                "name": {
+                                    "zh-CN": "333-异动测试1",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option38",
+                                "name": {
+                                    "zh-CN": "333-异动测试2",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option39",
+                                "name": {
+                                    "zh-CN": "mjc异动测试",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option40",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "付尧测试"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option41",
+                                "name": {
+                                    "zh-CN": "志祥测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option42",
+                                "name": {
+                                    "zh-CN": "测试连续多级异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option43",
+                                "name": {
+                                    "zh-CN": "12345677",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option44",
+                                "name": {
+                                    "zh-CN": "部门间异动(单人)",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option45",
+                                "name": {
+                                    "zh-CN": "222-异动测试9",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option46",
+                                "name": {
+                                    "zh-CN": "555-异动测试-1",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option47",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "首页测试"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option48",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "mjc异动测试2"
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option49",
+                                "name": {
+                                    "zh-CN": "HZC跨部门调动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option50",
+                                "name": {
+                                    "zh-CN": "测试黑",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option51",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "异动申请"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "测试离职人员审批"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option52"
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option53",
+                                "name": {
+                                    "zh-CN": "汪媛专用测试异动流程",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option54",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "555-移动测试2"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option55",
+                                "name": {
+                                    "zh-CN": "555-异动测试3",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option56",
+                                "name": {
+                                    "zh-CN": "测试事实是事实",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option57",
+                                "name": {
+                                    "zh-CN": "新的测试",
+                                    "en-US": "new_test"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option58",
+                                "name": {
+                                    "zh-CN": "666-time测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "555-移动测试3",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option59"
+                            },
+                            {
+                                "id": "assignment_start_reason_option60",
+                                "name": {
+                                    "zh-CN": "555-异动测试5",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option61",
+                                "name": {
+                                    "zh-CN": "555-异动测试6",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option62",
+                                "name": {
+                                    "zh-CN": "张洁测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option63",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "测试把"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option64",
+                                "name": {
+                                    "zh-CN": "单人异动2",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option65",
+                                "name": {
+                                    "zh-CN": "张洁 测试测试",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option66",
+                                "name": {
+                                    "zh-CN": "张洁的测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option67",
+                                "name": {
+                                    "zh-CN": "指定层级测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option68",
+                                "name": {
+                                    "zh-CN": "常规异动",
+                                    "en-US": "Common job change"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "job_status",
+                                "name": {
+                                    "zh-CN": "",
+                                    "en-US": "job status"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option69",
+                                "name": {
+                                    "zh-CN": "1111111",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "测试测试测试测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option70"
+                            },
+                            {
+                                "id": "assignment_start_reason_option71",
+                                "name": {
+                                    "zh-CN": "555-异动测试7",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option72",
+                                "name": {
+                                    "zh-CN": "数字控件测试专用",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option73",
+                                "name": {
+                                    "zh-CN": "张洁的测试圈11",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option74",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "张洁测试11"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option75",
+                                "name": {
+                                    "zh-CN": "555-移动测试8",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option76",
+                                "name": {
+                                    "zh-CN": "555-移动测试9",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option77",
+                                "name": {
+                                    "zh-CN": "dh",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "responsibility_transfer",
+                                "name": {
+                                    "zh-CN": "职责转交",
+                                    "en-US": "Responsibility Transfer"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option79",
+                                "name": {
+                                    "zh-CN": "zjw 异动流程",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option80",
+                                "name": {
+                                    "zh-CN": "上传",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option81",
+                                "name": {
+                                    "zh-CN": "测试BizData",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option82",
+                                "name": {
+                                    "zh-CN": "异动流程测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "实习生转正"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option83"
+                            },
+                            {
+                                "id": "assignment_start_reason_option84",
+                                "name": {
+                                    "zh-CN": "上传组件测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option85",
+                                "name": {
+                                    "zh-CN": "上传钱1111111",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option86",
+                                "name": {
+                                    "zh-CN": "测试-11",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option87",
+                                "name": {
+                                    "zh-CN": "数字控件测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option88",
+                                "name": {
+                                    "zh-CN": "数字控件测试11111",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option89",
+                                "name": {
+                                    "zh-CN": "zjw 测试流程",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option90",
+                                "name": {
+                                    "zh-CN": "310023异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option91",
+                                "name": {
+                                    "zh-CN": "310002异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option92",
+                                "name": {
+                                    "zh-CN": "310020异动",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "连续多级审批测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option93"
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "职级异动测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option94"
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "a临时测试异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option95"
+                            },
+                            {
+                                "id": "assignment_start_reason_option96",
+                                "name": {
+                                    "zh-CN": "[Test] 员工异动测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option97",
+                                "name": {
+                                    "zh-CN": "异动单人测试2",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option98",
+                                "name": {
+                                    "zh-CN": "勿动异动类型-jw",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option99",
+                                "name": {
+                                    "zh-CN": "测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option100",
+                                "name": {
+                                    "zh-CN": "[Test] 获取下一位置节点状态（勿动）",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option101",
+                                "name": {
+                                    "zh-CN": "更新数据测试（勿动）",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option102",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "「mini-加签」勿动"
+                                }
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option103",
+                                "name": {
+                                    "zh-CN": "会签测试异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option104",
+                                "name": {
+                                    "zh-CN": "组织架构调整用的异动流程",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option105",
+                                "name": {
+                                    "zh-CN": "加签LR（勿动）",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option106",
+                                "name": {
+                                    "zh-CN": "刘刘刘测试专用",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option107",
+                                "name": {
+                                    "zh-CN": "员工控件（勿动）",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option108",
+                                "name": {
+                                    "zh-CN": "员工范围测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option109",
+                                "name": {
+                                    "zh-CN": "员工测试范围1",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option110",
+                                "name": {
+                                    "zh-CN": "员工范围测试3",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option111",
+                                "name": {
+                                    "zh-CN": "111111111111111",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option112",
+                                "name": {
+                                    "zh-CN": "员工范围测试单",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option113",
+                                "name": {
+                                    "zh-CN": "测试移动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option114",
+                                "name": {
+                                    "zh-CN": "1111111111",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "BizData 测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option115"
+                            },
+                            {
+                                "id": "assignment_start_reason_option116",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "需求测试需求测试需求测试需求测试需求测试"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option117",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "变更成本中心&撤销虚线上级"
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option118",
+                                "name": {
+                                    "zh-CN": "日期测试",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option119",
+                                "name": {
+                                    "zh-CN": "日期测试2",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option120",
+                                "name": {
+                                    "zh-CN": "日期测试3",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option121",
+                                "name": {
+                                    "zh-CN": "测试移动流程",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option122",
+                                "name": {
+                                    "zh-CN": "钟一测试异动类型",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option123",
+                                "name": {
+                                    "zh-CN": "测试节点审批人功能",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option124",
+                                "name": {
+                                    "zh-CN": "中三的异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option125",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "移动流程"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option126",
+                                "name": {
+                                    "zh-CN": "yuangongyidong",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option127",
+                                "name": {
+                                    "zh-CN": "员工异动流程",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option128",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "异动测试流程1"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "异动测试1801",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option129"
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option130",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "员工异动-cf"
+                                }
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option131",
+                                "name": {
+                                    "zh-CN": "大富大贵-测试",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option132",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "九黎太子"
+                                }
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option133",
+                                "name": {
+                                    "zh-CN": "王七七的测试5-1",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option134",
+                                "name": {
+                                    "zh-CN": "曹一一看这里！！！！！",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option135",
+                                "name": {
+                                    "zh-CN": "王七七-测试真费劲！！！",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option136",
+                                "name": {
+                                    "zh-CN": "xukanfeng测试专用",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option137",
+                                "name": {
+                                    "zh-CN": "附件测试1",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "王七七的皇图霸业"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option138"
+                            },
+                            {
+                                "id": "assignment_start_reason_option139",
+                                "name": {
+                                    "zh-CN": "这是测试！注意啦⚠️",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option140",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "老爷爷呀！帮帮可怜的孩子吧。。。。"
+                                }
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option141",
+                                "name": {
+                                    "zh-CN": "异动测试2100",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option3",
+                                "name": {
+                                    "zh-CN": "whcekb",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option5",
+                                "name": {
+                                    "zh-CN": "test-王大发「勿动」！！！",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option6",
+                                "name": {
+                                    "zh-CN": "规则双语测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option7",
+                                "name": {
+                                    "zh-CN": "双语测试1",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option8",
+                                "name": {
+                                    "zh-CN": "[Test] 表单节点测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "datepicker样式",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option14"
+                            },
+                            {
+                                "id": "assignment_start_reason_option17",
+                                "name": {
+                                    "zh-CN": "最新版【王大发测试】",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option18",
+                                "name": {
+                                    "zh-CN": "特仑苏测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "tls2",
+                                "name": {
+                                    "zh-CN": "特仑苏测试2",
+                                    "en-US": "tls2"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option19",
+                                "name": {
+                                    "zh-CN": "zhang-test",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "表单异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option20"
+                            },
+                            {
+                                "id": "assignment_start_reason_option142",
+                                "name": {
+                                    "zh-CN": "FM 测试异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "测试dh"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option78"
+                            },
+                            {
+                                "id": "organization_adjustment",
+                                "name": {
+                                    "zh-CN": "组织架构调整",
+                                    "en-US": "Organization adjustment"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option143",
+                                "name": {
+                                    "zh-CN": "去重测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "zhanshixia测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option144"
+                            },
+                            {
+                                "visibility": false,
+                                "id": "assignment_start_reason_option145",
+                                "name": {
+                                    "zh-CN": "111",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option146",
+                                "name": {
+                                    "zh-CN": "这是测试1",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option147",
+                                "name": {
+                                    "zh-CN": "测试123",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "树状选择器异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option148"
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option149",
+                                "name": {
+                                    "zh-CN": "一二三",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option150",
+                                "name": {
+                                    "zh-CN": "树状+并行",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option151",
+                                "name": {
+                                    "zh-CN": "并行树状",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option152",
+                                "name": {
+                                    "zh-CN": "并行1",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option153",
+                                "name": {
+                                    "zh-CN": "树状选择器测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option154",
+                                "name": {
+                                    "zh-CN": "树状测试",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option155",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "并行测试"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option156",
+                                "name": {
+                                    "zh-CN": "并行测试2",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option157",
+                                "name": {
+                                    "zh-CN": "自动化新建异动",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option158",
+                                "name": {
+                                    "zh-CN": "自动化新建异动(勿动)20220321170641",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option159",
+                                "name": {
+                                    "zh-CN": "自动化新建异动(勿动)20220321172342",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option160",
+                                "name": {
+                                    "zh-CN": "test",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option161",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "并行222"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option162",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "收件人测试"
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option163",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "自动化新建异动(勿动)20220322110943"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option164",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "自动化新建异动(勿动)20220322111043"
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option165",
+                                "name": {
+                                    "zh-CN": "tree",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option166",
+                                "name": {
+                                    "zh-CN": "可编辑去重-连续只读",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option167",
+                                "name": {
+                                    "zh-CN": "可编辑去重-并行分支",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option168",
+                                "name": {
+                                    "zh-CN": "并行and",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option171",
+                                "name": {
+                                    "zh-CN": "betwen",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option172",
+                                "name": {
+                                    "zh-CN": "流程迁移测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option173",
+                                "name": {
+                                    "zh-CN": "配置迁移流程测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option174",
+                                "name": {
+                                    "zh-CN": "ceshi",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "[Test] 725造数据测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option175"
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option176",
+                                "name": {
+                                    "zh-CN": "员工信息",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option177",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "员工信息+小程序附件"
+                                },
+                                "description": null
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "异动流程330",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option178"
+                            },
+                            {
+                                "id": "assignment_start_reason_option179",
+                                "name": {
+                                    "zh-CN": "王七七测试XP",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option180",
+                                "name": {
+                                    "zh-CN": "平江县的异动测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option181",
+                                "name": {
+                                    "zh-CN": "大流程测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option182",
+                                "name": {
+                                    "zh-CN": "iframe检测",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option183",
+                                "name": {
+                                    "zh-CN": "平江县的异动",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option184",
+                                "name": {
+                                    "zh-CN": "交接",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option185",
+                                "name": {
+                                    "zh-CN": "4.7验证",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option186",
+                                "name": {
+                                    "zh-CN": "链接配置",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option187",
+                                "name": {
+                                    "zh-CN": "S",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option188",
+                                "name": {
+                                    "zh-CN": "sou",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option189",
+                                "name": {
+                                    "zh-CN": "ydqx",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option190",
+                                "name": {
+                                    "zh-CN": "排序",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "日期控件",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option191"
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option192",
+                                "name": {
+                                    "zh-CN": "tree2",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option193",
+                                "name": {
+                                    "zh-CN": "回归的人2",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option194",
+                                "name": {
+                                    "zh-CN": "lmj-异动测试",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "id": "assignment_start_reason_option195",
+                                "name": {
+                                    "zh-CN": "mingzilaochanglllllllllllllllllllllllllllllllllllllllll绿绿绿绿绿绿绿绿绿绿绿；；；",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option196",
+                                "name": {
+                                    "zh-CN": "UI1",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option197",
+                                "name": {
+                                    "zh-CN": "消除",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option198",
+                                "name": {
+                                    "zh-CN": "表单控件/规则的实现-tesla(勿动)",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option199",
+                                "name": {
+                                    "zh-CN": "异动测试0011",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option200",
+                                "name": {
+                                    "zh-CN": "7777",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option201",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "关联流程"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option202",
+                                "name": {
+                                    "zh-CN": "这是测试2",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option203",
+                                "name": {
+                                    "zh-CN": "0510",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option204",
+                                "name": {
+                                    "zh-CN": "自动化测试控件（勿动、勿动、勿动、勿动、勿动、勿动、勿动、勿动、勿动、勿动、勿动、勿动、勿动、勿动）",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "外包异动"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option205"
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option206",
+                                "name": {
+                                    "zh-CN": "tesla(勿动)-表单控件/规则的实现",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option207",
+                                "name": {
+                                    "zh-CN": "(tesla勿动）-表单控件规则验证",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option208",
+                                "name": {
+                                    "zh-CN": "回归的人",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "english",
+                                "name": {
+                                    "zh-CN": "员工异动1",
+                                    "en-US": "English"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option209",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "勿动！！tesla用例"
+                                }
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "abc",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option210"
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "assignment_start_reason_option211",
+                                "name": {
+                                    "zh-CN": "abc2",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option212",
+                                "name": {
+                                    "zh-CN": "测试用",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option213",
+                                "name": {
+                                    "zh-CN": "0518异动测试-xiaohe",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option214",
+                                "name": {
+                                    "zh-CN": "异动测试-流程新建",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option215",
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519144144",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519144235",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option216"
+                            },
+                            {
+                                "id": "assignment_start_reason_option217",
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519162418",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519162452",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option218"
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option219",
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519162853",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option220",
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519163339",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option221",
+                                "name": {
+                                    "zh-CN": "自动化测试流程",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option222",
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519180542",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option223",
+                                "name": {
+                                    "zh-CN": "自动化关联流程20220519180718",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option224",
+                                "name": {
+                                    "zh-CN": "控件规则",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option225",
+                                "name": {
+                                    "zh-CN": "永久测试流程",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "name": {
+                                    "zh-CN": "【勿动】staging",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option226"
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option227",
+                                "name": {
+                                    "zh-CN": "【勿动】-启停用",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option228",
+                                "name": {
+                                    "zh-CN": "全部",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option229",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "对对对"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option230",
+                                "name": {
+                                    "zh-CN": "aabbcc",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "id": "assignment_start_reason_option231",
+                                "name": {
+                                    "en-US": "",
+                                    "zh-CN": "异动到这里"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option232",
+                                "name": {
+                                    "zh-CN": "0531测试Rosie",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "assignment_start_reason_option233",
+                                "name": {
+                                    "zh-CN": "123",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option234",
+                                "name": {
+                                    "zh-CN": "解析",
+                                    "en-US": ""
+                                }
+                            },
+                            {
+                                "id": "assignment_start_reason_option235",
+                                "name": {
+                                    "zh-CN": "控件规则-自动化（勿动）",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true
+                            },
+                            {
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option236",
+                                "name": {
+                                    "zh-CN": "控件规则-tesla（勿动）",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false
+                            },
+                            {
+                                "visibility": true,
+                                "id": "assignment_start_reason_option237",
+                                "name": {
+                                    "zh-CN": "q x x x x x",
+                                    "en-US": ""
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option238",
+                                "name": {
+                                    "zh-CN": "跨时区测试",
+                                    "en-US": ""
+                                },
+                                "description": null
+                            },
+                            {
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": true,
+                                "id": "assignment_start_reason_option239",
+                                "name": {
+                                    "zh-CN": "消息测试",
+                                    "en-US": ""
+                                }
+                            }
+                        ],
+                        "visibility": true,
+                        "id": "job_change",
+                        "name": {
+                            "zh-CN": "异动",
+                            "en-US": "Job change"
+                        },
+                        "description": null
+                    },
+                    {
+                        "id": "offboarding",
+                        "name": {
+                            "en-US": "Offboarding",
+                            "zh-CN": "离职"
+                        },
+                        "description": null,
+                        "disabled": false,
+                        "childrens": [
+                            {
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false,
+                                "id": "voluntary",
+                                "name": {
+                                    "zh-CN": "主动离职",
+                                    "en-US": "Voluntary"
+                                },
+                                "description": null
+                            },
+                            {
+                                "id": "involuntary",
+                                "name": {
+                                    "zh-CN": "被动离职",
+                                    "en-US": "Involuntary"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            },
+                            {
+                                "visibility": false,
+                                "id": "other",
+                                "name": {
+                                    "zh-CN": "其他",
+                                    "en-US": "Other"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null
+                            },
+                            {
+                                "id": "offboarding_unknown",
+                                "name": {
+                                    "zh-CN": "未知",
+                                    "en-US": "Unknown"
+                                },
+                                "description": null,
+                                "disabled": false,
+                                "childrens": null,
+                                "visibility": false
+                            }
+                        ],
+                        "visibility": true
+                    },
+                    {
+                        "disabled": false,
+                        "childrens": null,
+                        "visibility": false,
+                        "id": "job_level_and_salary_review",
+                        "name": {
+                            "zh-CN": "调级调薪",
+                            "en-US": "Job level and salary review"
+                        },
+                        "description": null
+                    },
+                    {
+                        "childrens": null,
+                        "visibility": false,
+                        "id": "contract_change",
+                        "name": {
+                            "zh-CN": "合同换签",
+                            "en-US": "Contract change"
+                        },
+                        "description": null,
+                        "disabled": false
+                    },
+                    {
+                        "name": {
+                            "zh-CN": "雇员类型变更",
+                            "en-US": "Employee type change"
+                        },
+                        "description": null,
+                        "disabled": false,
+                        "childrens": null,
+                        "visibility": false,
+                        "id": "employee_type_change"
+                    }
+                ],
+                "template_field_metas": null,
+                "person_name": null,
+                "number_setting": null,
+                "confirmation_setting": null,
+                "address": null
+            },
+            "tips": "{}",
+            "multi_variables": {},
+            "role_authority_list": [],
+            "form_type": "tree_select",
+            "disabled": false,
+            "internal": null,
+            "visibility": true,
+            "type": 4,
+            "source_type": 0,
+            "label": {
+                "zh-CN": "异动类型",
+                "en-US": "Transform type"
+            }
+        },
+        {
+            "form_type": "select",
+            "exportable": null,
+            "disabled": false,
+            "default": null,
+            "type": 52,
+            "tips": "{}",
+            "role_authority_list": [],
+            "visibility": true,
+            "default_setting": null,
+            "advanced": {
+                "address": null,
+                "user_optional": null,
+                "enum_setting": null,
+                "number_setting": null,
+                "employee": null,
+                "phone": null,
+                "layout": null,
+                "national_id": null,
+                "alert_text_setting": null,
+                "style": null,
+                "email": null,
+                "person_name": null,
+                "iframe_setting": null,
+                "select_setting": null,
+                "confirmation_setting": null,
+                "options": null,
+                "time_axis_range": null,
+                "template_field_metas": null,
+                "custom": null,
+                "bank_account": null,
+                "time_axis": {
+                    "field_name": null,
+                    "type": 1
+                }
+            },
+            "field_name": "33948eb117b",
+            "secrecy": null,
+            "item_type": 0,
+            "source_type": 0,
+            "multi_variables": {},
+            "variables": [
+                {
+                    "wk_field_path": null,
+                    "api_name": "target_department",
+                    "data_source_id": null,
+                    "wk_api_name": null,
+                    "value": null,
+                    "list_type": null,
+                    "enum_source_type": null,
+                    "method_name": "",
+                    "type": 52
+                }
+            ],
+            "label": {
+                "zh-CN": "新部门",
+                "en-US": "Target department"
+            },
+            "required": false,
+            "digest": null,
+            "searchable": null,
+            "writable": true,
+            "internal": null,
+            "record_limit": null,
+            "roles": null
+        },
+        {
+            "disabled": false,
+            "type": 300,
+            "item_type": 0,
+            "record_limit": null,
+            "field_name": "3ae99e8477a",
+            "label": {
+                "zh-CN": "链接",
+                "en-US": "Url"
+            },
+            "form_type": "url",
+            "writable": false,
+            "default": null,
+            "advanced": {
+                "time_axis": null,
+                "phone": null,
+                "iframe_setting": null,
+                "number_setting": null,
+                "bank_account": null,
+                "style": null,
+                "time_axis_range": null,
+                "person_name": null,
+                "user_optional": null,
+                "enum_setting": null,
+                "alert_text_setting": null,
+                "confirmation_setting": null,
+                "address": null,
+                "select_setting": null,
+                "layout": null,
+                "options": null,
+                "template_field_metas": null,
+                "email": null,
+                "national_id": null,
+                "employee": null,
+                "custom": null
+            },
+            "tips": "{}",
+            "source_type": 4,
+            "digest": null,
+            "searchable": null,
+            "internal": null,
+            "visibility": true,
+            "roles": null,
+            "role_authority_list": [],
+            "variables": null,
+            "required": false,
+            "secrecy": null,
+            "exportable": null,
+            "default_setting": {
+                "url": {
+                    "text_type": 2,
+                    "text_variables": null,
+                    "href_type": 2,
+                    "href_variables": null
+                },
+                "date": null,
+                "datetime": null,
+                "text": null,
+                "employee": null,
+                "department": null,
+                "object": null,
+                "boolean": null
+            },
+            "multi_variables": {}
+        },
+        {
+            "form_type": "file",
+            "field_name": "df8974b8b69",
+            "label": {
+                "zh-CN": "自定义附件变量"
+            },
+            "required": false,
+            "writable": true,
+            "disabled": false,
+            "visibility": true,
+            "value": null,
+            "default": null,
+            "advanced": {
+                "select_setting": null,
+                "time_axis": null
+            },
+            "layout": {
+                "columns": 2,
+                "span": 12
+            },
+            "source_type": 0,
+            "variables": [
+                {
+                    "api_name": "customf2df8974b8b",
+                    "type": 100,
+                    "name": {
+                        "zh-CN": "自定义附件变量"
+                    },
+                    "parent": [],
+                    "list_type": 8
+                }
+            ],
+            "type": 100,
+            "item_type": 8
+        }
+    ],
+    "ui_meta_data": {},
+    "config": {
+        "field_meta_config": {
+            "read_only": false
+        },
+        "ui_meta_config": {
+            "widget_layout": "horizontal",
+            "section_style": "tiled"
+        }
+    },
+    "rule_list": [],
+    "ui": {
+        "pages": [
+            {
+                "title": {
+                    "zh-CN": "分页",
+                    "en-US": "Page"
+                },
+                "key": "cea18056cee",
+                "visibility": true,
+                "section_keys": [
+                    "ea18056ceef",
+                    "b63954cb16e",
+                    "0933948eb11",
+                    "be3ae99e847"
+                ]
+            }
+        ],
+        "sections": [
+            {
+                "field_names": [
+                    "18056ceefeb"
+                ],
+                "title": {
+                    "zh-CN": "分组",
+                    "en-US": "Group"
+                },
+                "key": "ea18056ceef",
+                "visibility": true
+            },
+            {
+                "field_names": [
+                    "3954cb16ed0"
+                ],
+                "title": {
+                    "zh-CN": "分组",
+                    "en-US": "Group"
+                },
+                "key": "b63954cb16e",
+                "visibility": true
+            },
+            {
+                "field_names": [
+                    "33948eb117b"
+                ],
+                "title": {
+                    "zh-CN": "分组",
+                    "en-US": "Group"
+                },
+                "key": "0933948eb11",
+                "visibility": true
+            },
+            {
+                "field_names": [
+                    "3ae99e8477a",
+                    "df8974b8b69"
+                ],
+                "title": {
+                    "zh-CN": "分组",
+                    "en-US": "Group"
+                },
+                "key": "be3ae99e847",
+                "visibility": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,1378 @@
+[
+	{
+		"key": "offer",
+		"name": {
+			"zh-CN": "offer",
+			"en-US": "offer"
+		},
+		"type": 1,
+		"data_model_id": "7034767502270336805",
+		"type_info": {
+			"value_type": 53,
+			"value_setting": {
+				"record_setting": {
+					"record_source_type": 2,
+					"record_key": "offer",
+					"source_api_name": null,
+					"variables": [
+						{
+							"type": 1,
+							"data_model_id": null,
+							"type_info": {
+								"value_type": 1,
+								"value_setting": null
+							},
+							"key": "offer_id",
+							"name": {
+								"zh-CN": "offer id",
+								"en-US": "offer id"
+							}
+						},
+						{
+							"type": 1,
+							"data_model_id": null,
+							"type_info": {
+								"value_type": 10,
+								"value_setting": null
+							},
+							"key": "offer_name",
+							"name": {
+								"zh-CN": "offer name",
+								"en-US": "offer name"
+							}
+						},
+						{
+							"type_info": {
+								"value_type": 50,
+								"value_setting": {
+									"object_setting": {
+										"wk_api_name": "employee_type",
+										"wk_field_path": null
+									}
+								}
+							},
+							"key": "employee_type",
+							"name": {
+								"zh-CN": "employee type",
+								"en-US": "employee type"
+							},
+							"type": 1,
+							"data_model_id": null
+						},
+						{
+							"type_info": {
+								"value_type": 54,
+								"value_setting": null
+							},
+							"key": "direct_manager",
+							"name": {
+								"zh-CN": "direct manager",
+								"en-US": "direct manager"
+							},
+							"type": 1,
+							"data_model_id": null
+						},
+						{
+							"type": 1,
+							"data_model_id": null,
+							"type_info": {
+								"value_type": 52,
+								"value_setting": null
+							},
+							"key": "department",
+							"name": {
+								"zh-CN": "department",
+								"en-US": "department"
+							}
+						},
+						{
+							"type_info": {
+								"value_type": 50,
+								"value_setting": {
+									"object_setting": {
+										"wk_api_name": "job_level",
+										"wk_field_path": null
+									}
+								}
+							},
+							"key": "job_level",
+							"name": {
+								"zh-CN": "job level",
+								"en-US": "job level"
+							},
+							"type": 1,
+							"data_model_id": null
+						},
+						{
+							"data_model_id": null,
+							"type_info": {
+								"value_type": 50,
+								"value_setting": {
+									"object_setting": {
+										"wk_api_name": "job_family",
+										"wk_field_path": null
+									}
+								}
+							},
+							"key": "job_family",
+							"name": {
+								"zh-CN": "job family",
+								"en-US": "job family"
+							},
+							"type": 1
+						}
+					]
+				}
+			}
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 100,
+			"value_setting": {
+				"list_setting": {
+					"elem_value_setting": null,
+					"elem_value_type": 54
+				}
+			}
+		},
+		"key": "multi_employment",
+		"name": {
+			"zh-CN": "批量异动员工",
+			"en-US": "Multiple Employment"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 52,
+			"value_setting": null
+		},
+		"key": "target_department",
+		"name": {
+			"zh-CN": "新部门",
+			"en-US": "Target department"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"name": {
+			"zh-CN": "流程实例ID",
+			"en-US": "Process ID"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "process_id"
+	},
+	{
+		"type_info": {
+			"value_type": 54,
+			"value_setting": null
+		},
+		"key": "original_dotted_manager",
+		"name": {
+			"zh-CN": "原虚线上级",
+			"en-US": "Original dotted manager"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 5,
+			"value_setting": null
+		},
+		"key": "contract_end_date",
+		"name": {
+			"zh-CN": "合同结束日期",
+			"en-US": "Contract End Date"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"key": "target_work_location",
+		"name": {
+			"zh-CN": "新工作地点",
+			"en-US": "Target work location"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "location",
+					"wk_field_path": "job_change.target_work_location"
+				}
+			}
+		}
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_id": "6982070250166996749",
+					"wk_api_name": "duration_type",
+					"enum_source_type": 2
+				}
+			}
+		},
+		"key": "origin_duration_type",
+		"name": {
+			"zh-CN": "原期限类型",
+			"en-US": "Origin Duration Type"
+		},
+		"type": 1
+	},
+	{
+		"key": "wk_updated_by",
+		"name": {
+			"zh-CN": "更新人",
+			"en-US": "Updated by"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		}
+	},
+	{
+		"key": "business_id",
+		"name": {
+			"zh-CN": "业务单据ID",
+			"en-US": "Business ID"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_setting": null,
+			"value_type": 1
+		}
+	},
+	{
+		"key": "target_working_hours_type",
+		"name": {
+			"zh-CN": "新工时制度",
+			"en-US": "Target working hours type"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "working_hours_type",
+					"wk_field_path": "job_change.target_working_hours_type"
+				}
+			}
+		}
+	},
+	{
+		"type_info": {
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982071661864865567",
+					"wk_api_name": "work_shift"
+				}
+			},
+			"value_type": 4
+		},
+		"key": "origin_work_shift",
+		"name": {
+			"en-US": "Origin Work Shift",
+			"zh-CN": "原排班"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "company",
+					"wk_field_path": "job_change.target_company"
+				}
+			},
+			"value_type": 50
+		},
+		"key": "target_company",
+		"name": {
+			"en-US": "Target company",
+			"zh-CN": "新公司"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"key": "origin_weekly_working_hours",
+		"name": {
+			"en-US": "Origin Weekly Working Hours",
+			"zh-CN": "原周工作时长"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 3,
+			"value_setting": {
+				"number_setting": {
+					"max": "168.0",
+					"min": "0.0",
+					"max_decimal_digits": 0
+				}
+			}
+		}
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_setting": null,
+			"value_type": 5
+		},
+		"key": "origin_contract_end_date",
+		"name": {
+			"zh-CN": "原合同结束日期",
+			"en-US": "Origin Contract End Date"
+		}
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 7,
+			"value_setting": null
+		},
+		"key": "wk_updated_at",
+		"name": {
+			"zh-CN": "更新时间",
+			"en-US": "Updated at"
+		},
+		"type": 1
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "location",
+					"wk_field_path": "job_change.original_work_location"
+				}
+			}
+		},
+		"key": "original_work_location",
+		"name": {
+			"en-US": "Original work location",
+			"zh-CN": "原工作地点"
+		}
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "work_calendar",
+					"wk_field_path": "job_change.origin_working_calendar"
+				}
+			}
+		},
+		"key": "origin_working_calendar",
+		"name": {
+			"zh-CN": "原工作日历",
+			"en-US": "Origin Working Calendar"
+		},
+		"type": 1
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "approve_status",
+		"name": {
+			"zh-CN": "审批状态",
+			"en-US": "Approve status"
+		},
+		"type": 1
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 3,
+			"value_setting": {
+				"number_setting": {
+					"max": "168.0",
+					"min": "0.0",
+					"max_decimal_digits": 0
+				}
+			}
+		},
+		"key": "target_weekly_working_hours",
+		"name": {
+			"zh-CN": "新周工作时长",
+			"en-US": "Target Weekly Working Hours"
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "job_responsibilities",
+		"name": {
+			"zh-CN": "岗位职责",
+			"en-US": "Job responsibilities"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 54,
+			"value_setting": null
+		},
+		"key": "target_dotted_manager",
+		"name": {
+			"zh-CN": "新虚线上级",
+			"en-US": "Target dotted manager"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "origin_contract_number",
+		"name": {
+			"zh-CN": "原合同编号",
+			"en-US": "Origin Contract Number"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"key": "target_cost_center",
+		"name": {
+			"en-US": "New Cost Center",
+			"zh-CN": "新成本中心"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982071661864816415",
+					"wk_api_name": "contract_type"
+				}
+			}
+		},
+		"key": "origin_contract_type",
+		"name": {
+			"en-US": "Origin Contract Type",
+			"zh-CN": "原合同类型"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_setting": null,
+			"value_type": 1
+		},
+		"key": "node_id",
+		"name": {
+			"zh-CN": "审批结点ID",
+			"en-US": "Node ID"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982071661864849183",
+					"wk_api_name": "signing_type"
+				}
+			},
+			"value_type": 4
+		},
+		"key": "origin_signing_type",
+		"name": {
+			"zh-CN": "原签订类型",
+			"en-US": "Origin Signing Type"
+		},
+		"type": 1
+	},
+	{
+		"type_info": {
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "job_family",
+					"wk_field_path": "job_change.original_job_family"
+				}
+			},
+			"value_type": 50
+		},
+		"key": "original_job_family",
+		"name": {
+			"zh-CN": "原序列",
+			"en-US": "Original job family"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982071661864849183",
+					"wk_api_name": "signing_type"
+				}
+			}
+		},
+		"key": "target_signing_type",
+		"name": {
+			"zh-CN": "新签订类型",
+			"en-US": "Target Signing Type"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982071661864865567",
+					"wk_api_name": "work_shift"
+				}
+			}
+		},
+		"key": "target_work_shift",
+		"name": {
+			"zh-CN": "新排班",
+			"en-US": "Target Work Shift"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 54,
+			"value_setting": null
+		},
+		"key": "employment",
+		"name": {
+			"en-US": "Employment",
+			"zh-CN": "员工"
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 2,
+			"value_setting": null
+		},
+		"key": "target_dotted_manager_clean",
+		"name": {
+			"zh-CN": "是否撤销虚线上级",
+			"en-US": "Clean Dotted Manager"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 7,
+			"value_setting": null
+		},
+		"key": "wk_created_at",
+		"name": {
+			"zh-CN": "创建时间",
+			"en-US": "Created at"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"key": "target_contract_type",
+		"name": {
+			"zh-CN": "新合同类型",
+			"en-US": "Target Contract Type"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982071661864816415",
+					"wk_api_name": "contract_type"
+				}
+			}
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "company",
+					"wk_field_path": "job_change.original_company"
+				}
+			}
+		},
+		"key": "original_company",
+		"name": {
+			"zh-CN": "原公司",
+			"en-US": "Original company"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6981714184493403940",
+					"wk_api_name": "assignment_start_reason"
+				}
+			}
+		},
+		"key": "transform_type",
+		"name": {
+			"zh-CN": "异动类型",
+			"en-US": "Transform type"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "remark",
+		"name": {
+			"zh-CN": "备注",
+			"en-US": "Remark"
+		},
+		"type": 1
+	},
+	{
+		"type_info": {
+			"value_type": 5,
+			"value_setting": null
+		},
+		"key": "probation_end_date",
+		"name": {
+			"zh-CN": "预计试用结束日期",
+			"en-US": "Probation End Date"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "job_level",
+					"wk_field_path": "job_change.target_job_level"
+				}
+			}
+		},
+		"key": "target_job_level",
+		"name": {
+			"zh-CN": "新级别",
+			"en-US": "Target job level"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982070250166980365",
+					"wk_api_name": "compensation_type"
+				}
+			}
+		},
+		"key": "target_compensation_type",
+		"name": {
+			"zh-CN": "新薪资类型",
+			"en-US": "Target Compensation Type"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"name": {
+			"zh-CN": "原直属上级",
+			"en-US": "Original direct manager"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 54,
+			"value_setting": null
+		},
+		"key": "original_direct_manager"
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "employee_type",
+					"wk_field_path": "job_change.original_workforce_type"
+				}
+			}
+		},
+		"key": "original_workforce_type",
+		"name": {
+			"zh-CN": "原人员类型",
+			"en-US": "Original workforce type"
+		},
+		"type": 1
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982070250166996749",
+					"wk_api_name": "duration_type"
+				}
+			}
+		},
+		"key": "target_duration_type",
+		"name": {
+			"zh-CN": "新期限类型",
+			"en-US": "Target Duration Type"
+		},
+		"type": 1
+	},
+	{
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "employee_type",
+					"wk_field_path": "job_change.target_workforce_type"
+				}
+			}
+		},
+		"key": "target_workforce_type",
+		"name": {
+			"en-US": "Target workforce type",
+			"zh-CN": "新人员类型"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "working_hours_type",
+					"wk_field_path": "job_change.original_working_hours_type"
+				}
+			}
+		},
+		"key": "original_working_hours_type",
+		"name": {
+			"zh-CN": "原工时制度",
+			"en-US": "Original working hours type"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_id": "6981719553500991245",
+					"wk_api_name": "reason_for_job_change",
+					"enum_source_type": 2
+				}
+			}
+		},
+		"key": "transform_reason",
+		"name": {
+			"zh-CN": "异动原因",
+			"en-US": "Transform reason"
+		}
+	},
+	{
+		"name": {
+			"en-US": "Target job family",
+			"zh-CN": "新序列"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "job_family",
+					"wk_field_path": "job_change.target_job_family"
+				}
+			}
+		},
+		"key": "target_job_family"
+	},
+	{
+		"key": "target_contract_start_date",
+		"name": {
+			"zh-CN": "新合同开始日期",
+			"en-US": "Target Contract Start Date"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 7,
+			"value_setting": null
+		}
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "job",
+					"wk_field_path": "job_change.target_job"
+				}
+			}
+		},
+		"key": "target_job",
+		"name": {
+			"zh-CN": "新职务",
+			"en-US": "Target job"
+		},
+		"type": 1
+	},
+	{
+		"key": "origin_social_security_city",
+		"name": {
+			"zh-CN": "原社保城市",
+			"en-US": "Origin Social Security City"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_field_path": "job_change.origin_social_security_city",
+					"wk_api_name": "location"
+				}
+			}
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 7,
+			"value_setting": null
+		},
+		"key": "wk_deleted_at",
+		"name": {
+			"zh-CN": "删除时间",
+			"en-US": "Deleted at"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "handover_document",
+		"name": {
+			"zh-CN": "交接文档",
+			"en-US": "Handover document"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "wk_id",
+		"name": {
+			"zh-CN": "ID",
+			"en-US": "ID"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 7,
+			"value_setting": null
+		},
+		"key": "origin_contract_start_date",
+		"name": {
+			"zh-CN": "原合同开始日期",
+			"en-US": "Origin Contract Start Date"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"name": {
+			"zh-CN": "发起人",
+			"en-US": "Initiator"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 54,
+			"value_setting": null
+		},
+		"key": "initiator"
+	},
+	{
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "work_calendar",
+					"wk_field_path": "job_change.target_working_calendar"
+				}
+			}
+		},
+		"key": "target_working_calendar",
+		"name": {
+			"en-US": "Target Working Calendar",
+			"zh-CN": "新工作日历"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "status",
+		"name": {
+			"zh-CN": "异动状态",
+			"en-US": "Status"
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "wk_created_by",
+		"name": {
+			"zh-CN": "创建人",
+			"en-US": "Created by"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"key": "job_title",
+		"name": {
+			"zh-CN": "职位名称",
+			"en-US": "Job Title"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		}
+	},
+	{
+		"name": {
+			"zh-CN": "新合同编号",
+			"en-US": "Target Contract Number"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "target_contract_number"
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "job",
+					"wk_field_path": "job_change.original_job"
+				}
+			}
+		},
+		"key": "original_job",
+		"name": {
+			"zh-CN": "原职务",
+			"en-US": "Original job"
+		},
+		"type": 1
+	},
+	{
+		"type_info": {
+			"value_type": 54,
+			"value_setting": null
+		},
+		"key": "target_direct_manager",
+		"name": {
+			"zh-CN": "新直属上级",
+			"en-US": "Target direct manager"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 4,
+			"value_setting": {
+				"enum_setting": {
+					"enum_source_type": 2,
+					"enum_source_id": "6982070250166980365",
+					"wk_api_name": "compensation_type"
+				}
+			}
+		},
+		"key": "origin_compensation_type",
+		"name": {
+			"zh-CN": "原薪资类型",
+			"en-US": "Origin Compensation Type"
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "job_level",
+					"wk_field_path": "job_change.original_job_level"
+				}
+			}
+		},
+		"key": "original_job_level",
+		"name": {
+			"zh-CN": "原级别",
+			"en-US": "Original job level"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "flow_id",
+		"name": {
+			"zh-CN": "流程定义ID",
+			"en-US": "Flow ID"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "original_cost_center",
+		"name": {
+			"zh-CN": "原成本中心",
+			"en-US": "Previous Cost Center"
+		},
+		"type": 1
+	},
+	{
+		"type_info": {
+			"value_type": 5,
+			"value_setting": null
+		},
+		"key": "origin_probation_end_date",
+		"name": {
+			"zh-CN": "原试用期预计结束日期",
+			"en-US": "Origin Probation End Date"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_setting": null,
+			"value_type": 52
+		},
+		"key": "original_department",
+		"name": {
+			"en-US": "Original department",
+			"zh-CN": "原部门"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"key": "offer_info",
+		"name": {
+			"zh-CN": "offer信息",
+			"en-US": "Offer Info"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		}
+	},
+	{
+		"key": "target_social_security_city",
+		"name": {
+			"zh-CN": "新社保城市",
+			"en-US": "Target Social Security City"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 50,
+			"value_setting": {
+				"object_setting": {
+					"wk_api_name": "location",
+					"wk_field_path": "job_change.target_social_security_city"
+				}
+			}
+		}
+	},
+	{
+		"type_info": {
+			"value_setting": null,
+			"value_type": 1
+		},
+		"key": "business_json",
+		"name": {
+			"zh-CN": "业务单据数据",
+			"en-US": "Business Form Data"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"name": {
+			"zh-CN": "生效日期",
+			"en-US": "Effective date"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 7,
+			"value_setting": null
+		},
+		"key": "effective_date"
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 2,
+			"value_setting": null
+		},
+		"key": "probation_exist",
+		"name": {
+			"zh-CN": "是否有试用期",
+			"en-US": "Probation Exist"
+		},
+		"type": 1
+	},
+	{
+		"key": "bpm_flow_name",
+		"name": {
+			"zh-CN": "流程名称",
+			"en-US": "Workflow name"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 10,
+			"value_setting": null
+		}
+	},
+	{
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 51,
+			"value_setting": null
+		},
+		"key": "bpm_flow_applier",
+		"name": {
+			"zh-CN": "流程发起人",
+			"en-US": "Applicant name"
+		}
+	},
+	{
+		"type_info": {
+			"value_type": 100,
+			"value_setting": {
+				"list_setting": {
+					"elem_value_type": 51,
+					"elem_value_setting": null
+				}
+			}
+		},
+		"key": "bpm_flow_commentator",
+		"name": {
+			"zh-CN": "流程全部评论人",
+			"en-US": "All of the commentators"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 7,
+			"value_setting": null
+		},
+		"key": "bpm_flow_create_time",
+		"name": {
+			"zh-CN": "流程发起时间",
+			"en-US": "The starting time"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"type_info": {
+			"value_type": 100,
+			"value_setting": {
+				"list_setting": {
+					"elem_value_type": 51,
+					"elem_value_setting": null
+				}
+			}
+		},
+		"key": "bpm_flow_approver",
+		"name": {
+			"zh-CN": "流程所有处理人（流程中所有处理人和抄送人）",
+			"en-US": "All of the approvers"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 51,
+			"value_setting": null
+		},
+		"key": "bpm_node_approver",
+		"name": {
+			"zh-CN": "当前处理人",
+			"en-US": "Current approvers"
+		},
+		"type": 1
+	},
+	{
+		"type_info": {
+			"value_type": 100,
+			"value_setting": {
+				"list_setting": {
+					"elem_value_type": 51,
+					"elem_value_setting": null
+				}
+			}
+		},
+		"key": "bpm_pre_node_approver",
+		"name": {
+			"zh-CN": "前序处理人（已完成节点的处理人和抄送人）",
+			"en-US": "Previous handlers who have completed their tasks"
+		},
+		"type": 1,
+		"data_model_id": null
+	},
+	{
+		"name": {
+			"en-US": "bpm process id",
+			"zh-CN": "流程ID"
+		},
+		"type": 1,
+		"data_model_id": null,
+		"type_info": {
+			"value_type": 1,
+			"value_setting": null
+		},
+		"key": "bpm_process_id"
+	},
+	{
+		"type": 2,
+		"key": "custom4c87fe98b3c",
+		"name": {
+			"zh-CN": "自定义附件变量"
+		},
+		"type_info": {
+			"value_type": 100,
+			"value_setting": {
+				"list_setting": {
+					"elem_value_type": 8
+				}
+			}
+		}
+	}
+]
