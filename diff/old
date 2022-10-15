@@ -1,0 +1,35 @@
+	{
+				"employee_id": "7717738",
+				"name": "韩梅梅",
+				"email": "hanmeimei@bytedance.com",
+				"email_prefix": "hanmeimei",
+				"department": {
+					"id": "288980000065005300",
+					"name": "Lark Business Applications-Infra-Frontend",
+					"saas_id": "6997345217103791624"
+				},
+				"approver_type": null,
+				"en_name": "Meimei Han",
+				"avatar": "https://s1-imfile.feishucdn.com/static-resource/v1/v2_0e390eff-9b8d-4d6a-8b2b-41097620c3bg~?image_size=noop&cut_type=&quality=&format=png&sticker_format=.webp",
+				"city": {
+					"name": "北京",
+					"en_name": "Beijing"
+				},
+				"leader": {
+					"id": "7132988",
+					"name": "朱建庭",
+					"en_name": "Jianting Zhu",
+					"saas_id": "7085893672981497374"
+				},
+				"is_current_user": false,
+				"employee_saas_id": "6961968151663740424",
+				"user_id": "6961968151663740424",
+				"tenant_id": null,
+				"user_id_hash": null,
+				"tenant_id_hash": null,
+				"is_bytedance": null,
+				"avatar72": null,
+				"avatar240": null,
+				"avatar640": null,
+				"is_system": null
+			}

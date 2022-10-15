@@ -1,0 +1,33 @@
+	{
+				"employee_id": "7717738",
+				"name": "韩梅梅",
+				"email": "hanmeimei@bytedance.com",
+				"email_prefix": null,
+				"department": {
+					"id": "6997345217103791624",
+					"name": ""
+				},
+				"approver_type": null,
+				"en_name": "韩梅梅",
+				"avatar": "https://s1-imfile.feishucdn.com/static-resource/v1/v2_0e390eff-9b8d-4d6a-8b2b-41097620c3bg~?image_size=noop&cut_type=&quality=&format=png&sticker_format=.webp",
+				"city": {
+					"name": "北京",
+					"en_name": ""
+				},
+				"leader": {
+					"id": "7085893672981497374",
+					"name": "朱建庭(Jianting Zhu)",
+					"en_name": "朱建庭(Jianting Zhu)"
+				},
+				"is_current_user": false,
+				"employee_saas_id": "6961968151663740424",
+				"user_id": "6961968151663740424",
+				"tenant_id": "6685321562717324807",
+				"user_id_hash": "a530ad03a025635dde5cb3b814e378cc",
+				"tenant_id_hash": "7cc252d49a28042313bc3b8f24d4d56a",
+				"is_bytedance": true,
+				"avatar72": "https://s1-imfile.feishucdn.com/static-resource/v1/v2_0e390eff-9b8d-4d6a-8b2b-41097620c3bg~?image_size=72x72&cut_type=&quality=&format=png&sticker_format=.webp",
+				"avatar240": "https://s1-imfile.feishucdn.com/static-resource/v1/v2_0e390eff-9b8d-4d6a-8b2b-41097620c3bg~?image_size=240x240&cut_type=&quality=&format=png&sticker_format=.webp",
+				"avatar640": "https://s1-imfile.feishucdn.com/static-resource/v1/v2_0e390eff-9b8d-4d6a-8b2b-41097620c3bg~?image_size=640x640&cut_type=&quality=&format=png&sticker_format=.webp",
+				"is_system": null
+			}
